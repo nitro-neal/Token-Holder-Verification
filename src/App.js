@@ -1,28 +1,16 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import TopTabs from "./components/TopTabs";
 import "./App.css";
-
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Metamask from "./pages/metamask";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <div>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/metamask">Metamask</Link>
-              </li>
-            </ul>
-          </nav>
-
           <Switch>
-            <Route path="/metamask">
-              <Metamask />
+            <Route path="/">
+              <TopTabs />
             </Route>
           </Switch>
         </div>
