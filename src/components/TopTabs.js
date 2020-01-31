@@ -73,9 +73,7 @@ class TopTabs extends Component {
               <MDBTabPane tabId="1">
                 <Metamask />
               </MDBTabPane>
-              <MDBTabPane tabId="2">
-                <TrustWalletConnect />
-              </MDBTabPane>
+              <MDBTabPane tabId="2">{/* <TrustWalletConnect /> */}</MDBTabPane>
               <MDBTabPane tabId="3">
                 <p>Other</p>
               </MDBTabPane>
